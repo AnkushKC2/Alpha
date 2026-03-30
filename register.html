@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | Auth Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card">
+        <h1>Create Account</h1>
+        <form id="register-form" class="form-stack" novalidate>
+          <label for="register-name">Full Name</label>
+          <input id="register-name" name="name" type="text" autocomplete="name" required />
+
+          <label for="register-email">Email</label>
+          <input id="register-email" name="email" type="email" autocomplete="email" required />
+
+          <label for="register-password">Password</label>
+          <input id="register-password" name="password" type="password" minlength="8" autocomplete="new-password" required />
+
+          <button type="submit" class="button">Create Account</button>
+          <p id="register-message" class="message" aria-live="polite"></p>
+        </form>
+
+        <section class="realtime">
+          <h2>Realtime Activity</h2>
+          <p id="realtime-status" class="message">Connecting...</p>
+          <ul id="realtime-feed" class="feed"></ul>
+        </section>
+
+        <p class="helper-text">Already registered? <a href="login.html">Sign in</a></p>
+      </section>
+    </main>
+    <script src="auth.js"></script>
+  </body>
+</html>

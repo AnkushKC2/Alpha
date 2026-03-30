@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Auth Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card">
+        <h1>Sign In</h1>
+        <form id="login-form" class="form-stack" novalidate>
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" autocomplete="email" required />
+
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" autocomplete="current-password" required />
+
+          <button type="submit" class="button">Login</button>
+          <p id="login-message" class="message" aria-live="polite"></p>
+        </form>
+
+        <section class="realtime">
+          <h2>Realtime Activity</h2>
+          <p id="realtime-status" class="message">Connecting...</p>
+          <ul id="realtime-feed" class="feed"></ul>
+        </section>
+
+        <p class="helper-text">Need an account? <a href="register.html">Register</a></p>
+      </section>
+    </main>
+    <script src="auth.js"></script>
+  </body>
+</html>

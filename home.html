@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Auth Portal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card">
+        <h1>Home</h1>
+        <p>Signed in user profile details.</p>
+
+        <div class="profile-grid">
+          <div class="profile-row">
+            <span class="profile-label">Name</span>
+            <strong id="profile-name">-</strong>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">Email</span>
+            <strong id="profile-email">-</strong>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">Member Since</span>
+            <strong id="profile-created">-</strong>
+          </div>
+        </div>
+
+        <div class="button-row start-row">
+          <a class="button button-secondary" href="index.html">Back to Landing</a>
+          <button id="logout-button" class="button" type="button">Logout</button>
+        </div>
+      </section>
+    </main>
+    <script src="auth.js"></script>
+  </body>
+</html>
